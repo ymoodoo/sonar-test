@@ -2,18 +2,13 @@ package com.iqera.demo;
 
 import com.samskivert.mustache.Mustache;
 import com.samskivert.mustache.Template;
-import gg.jte.CodeResolver;
 import gg.jte.ContentType;
 import gg.jte.TemplateEngine;
-import gg.jte.output.PrintWriterOutput;
 import gg.jte.output.StringOutput;
-import gg.jte.resolve.DirectoryCodeResolver;
-import gg.jte.springframework.boot.autoconfigure.JteConfigurationException;
 import io.pebbletemplates.pebble.PebbleEngine;
 import io.pebbletemplates.pebble.template.PebbleTemplate;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,9 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.file.FileSystems;
-import java.nio.file.Paths;
-import java.util.HashMap;
 import java.util.Map;
 
 @SpringBootApplication
