@@ -106,9 +106,18 @@ public class DemoApplication {
 			StringWriter sw = new StringWriter();
 			template.evaluate(sw, model);
 
+
+			System.out.println("this is a test");
+
 			return sw.toString();
 
 
+		}
+
+
+		public String systemOut(){
+			System.out.println("this is a test");
+			return null;
 		}
 
 
