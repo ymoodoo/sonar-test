@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+{% if heading == "testing" %}
+    <h1>we are testing</h1>
+{% else %}
+    <h1>{{heading}}</h1>
+{% endif %}
+<p>{{message}}</p>
+
+<H2>{{nested.message}}</H2>
+
+
+<H2>loops</H2>
+
+<table>
+    <tr>
+        <th>debtor</th>
+        <th>oustanding balance</th>
+    </tr>
+    {% for debt in debts %}
+    <tr><td>{{ debt.name }}</td> <td>{{ debt.value }}</td></tr>
+    {% endfor %}
+
+</table>
+
+<H3>get second in loop</H3>
+{{debts[1].name}} has a debt of {{debts[1].value}}
+
+</body>
+</html>
